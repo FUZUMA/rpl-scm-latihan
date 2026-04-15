@@ -1,11 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Latihan SCM</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js" defer></script>
+  <title>Sharul Portfolio</title>
 </head>
-<body>
-  <h1>Hello RPL</h1>
-  <p>Latihan SCM Pertemuan 5</p>
-  <p>Ini perubahan dari branch feature</p>
+<body class="light-theme">
+  <div class="loading">
+    <div class="loading-spinner"></div>
+    <p>Loading...</p>
+  </div>
+
+  <header class="header">
+    <div class="header-content">
+      <div class="header-logo">
+        <img src="Logo_Fuzuma.png" width="80" height="40" alt="Logo Fuzuma">
+      </div>
+      <nav class="header-nav">
+        <button class="nav-btn active" data-section="hero">Home</button>
+        <button class="nav-btn" data-section="about">About</button>
+        <button class="nav-btn" data-section="projects">Projects</button>
+        <button class="nav-btn" data-section="contact">Contact</button>
+      </nav>
+<label class="theme-switch" title="Toggle Day/Night Mode">
+  <input type="checkbox" class="theme-switch-input" id="theme-toggle">
+  <span class="theme-switch-slider"></span>
+</label>
+    </div>
+  </header>
+  <div class="main-content">
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Sharul Rahmanda's Personal Website</h1>
+      <p>Learn more about me</p>
+      <button class="cta-btn">Start Your Journey</button>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="card">
+        <div class="text-content">
+          <h2>SHARUL RAHMANDA</h2>
+          <p>A computer science student who is developing his IT skills and gaming.</p>
+          <p><strong>Gender :</strong> MAN</p>
+          <p><strong>Hobby :</strong> Playing Game, Watching Film and Reading Novels</p>
+          <p><strong>about others :</strong> A gaming streamer on YouTube who is interested in becoming a user interface (UI/UX) developer, artificial intelligence (AI) engineer, and data scientist.</p>
+
+          <div class="skills-grid">
+            <div class="skill-item">
+              <h3>Web Development</h3>
+              <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-item">
+              <h3>Design</h3>
+              <p>UI/UX, Graphic Design</p>
+            </div>
+            <div class="skill-item">
+              <h3>Career</h3>
+              <p>a gaming streamer on YouTube</p>
+            </div>
+          </div>
+        </div>
+        <img src="Fuzuma.webp" alt="Fuzuma">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>Description of project 1</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Description of project 2</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form" id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <textarea id="message" name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+
+      <div class="social-media">
+        <h3>Follow Me</h3>
+        <a href="https://www.youtube.com/@sharulrahmanda" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/fzzreal" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/@fuzuma1" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/FUZUMA" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+
+      <div class="support">
+        <h3>Support Me</h3>
+        <a href="https://trakteer.id/fuzuma" target="_blank">Donation</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Sharul Rahmanda</h3>
+          <p>A computer science student who is developing his IT skills and career on YouTube gaming.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Social Media</h3>
+          <a href="https://www.youtube.com/@sharulrahmanda" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/fzzreal" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/@fuzuma1" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com/FUZUMA" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sharul Rahmanda. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  </div>
 </body>
 </html>
